@@ -1,0 +1,49 @@
+Performance Analysis Results
+========================================
+
+Goals Per Game Performance Equation:
+Equation: goals_per_game = 4.61 + 0.09 * normalized(training_hours) + 0.51 * normalized(training_intensity) + 0.02 * normalized(training_frequency)
+R-squared: 0.4562
+
+Speed Km H Performance Equation:
+Equation: speed_km_h = 29.83 + 0.05 * normalized(training_hours) + 0.71 * normalized(training_intensity) + -0.04 * normalized(training_frequency)
+R-squared: 0.3474
+
+Heart Rate Performance Equation:
+Equation: heart_rate = 83.77 + 0.08 * normalized(training_hours) + 1.34 * normalized(training_intensity) + 0.29 * normalized(training_frequency)
+R-squared: 0.6764
+
+Strength Performance Equation:
+Equation: strength = 6.22 + 0.08 * normalized(training_hours) + 0.54 * normalized(training_intensity) + -0.01 * normalized(training_frequency)
+R-squared: 0.6542
+
+Sleep Quality Performance Equation:
+Equation: sleep_quality = 5.61 + 0.11 * normalized(training_hours) + -0.79 * normalized(training_intensity) + 0.02 * normalized(training_frequency)
+R-squared: 0.8793
+
+Recovery Rate Performance Equation:
+Equation: recovery_rate = 7.15 + 0.05 * normalized(training_hours) + 0.56 * normalized(training_intensity) + -0.01 * normalized(training_frequency)
+R-squared: 0.6183
+
+Injury Risk Percentage Performance Equation:
+Equation: injury_risk_percentage = 38.87 + 0.15 * normalized(training_hours) + 4.07 * normalized(training_intensity) + 0.15 * normalized(training_frequency)
+R-squared: 0.8064
+
+Fatigue Level Performance Equation:
+Equation: fatigue_level = 7.38 + 0.13 * normalized(training_hours) + 1.07 * normalized(training_intensity) + -0.01 * normalized(training_frequency)
+R-squared: 0.8128
+
+Performance Score Performance Equation:
+Equation: performance_score = 91.43 + 0.30 * normalized(training_hours) + 0.71 * normalized(training_intensity) + -0.84 * normalized(training_frequency)
+R-squared: -0.0326
+
+
+Note:
+- Equations represent the relationship between training variables and performance metrics
+- R-squared indicates the proportion of variance explained by the model
+- Training variables are normalized to ensure fair comparison
+
+Constraints:
+- Training Frequency: 1-7 days per week
+- Training Hours: 1-20 hours per week (1-5 hours per training day)
+- Training Intensity: 1-10 scale

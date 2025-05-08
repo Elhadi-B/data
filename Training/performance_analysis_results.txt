@@ -1,0 +1,41 @@
+Performance Analysis Results
+========================================
+
+Goals Per Game Performance Equation:
+Equation: goals_per_game = 1.73 + 0.04 * normalized(training_hours) + 0.54 * normalized(training_intensity) + 0.03 * normalized(training_frequency)
+R-squared: 0.9601
+
+Speed Km H Performance Equation:
+Equation: speed_km_h = 29.83 + 0.05 * normalized(training_hours) + 0.71 * normalized(training_intensity) + -0.04 * normalized(training_frequency)
+R-squared: 0.3474
+
+Heart Rate Performance Equation:
+Equation: heart_rate = 81.61 + -0.01 * normalized(training_hours) + 0.50 * normalized(training_intensity) + 0.12 * normalized(training_frequency)
+R-squared: 0.2907
+
+Strength Performance Equation:
+Equation: strength = 6.22 + 0.08 * normalized(training_hours) + 0.54 * normalized(training_intensity) + -0.01 * normalized(training_frequency)
+R-squared: 0.6542
+
+Sleep Quality Performance Equation:
+Equation: sleep_quality = 5.05 + 0.08 * normalized(training_hours) + -0.52 * normalized(training_intensity) + -0.01 * normalized(training_frequency)
+R-squared: 0.7526
+
+Recovery Rate Performance Equation:
+Equation: recovery_rate = 7.15 + 0.05 * normalized(training_hours) + 0.56 * normalized(training_intensity) + -0.01 * normalized(training_frequency)
+R-squared: 0.6183
+
+Injury Risk Percentage Performance Equation:
+Equation: injury_risk_percentage = 38.87 + 0.15 * normalized(training_hours) + 4.07 * normalized(training_intensity) + 0.15 * normalized(training_frequency)
+R-squared: 0.8064
+
+Fatigue Level Performance Equation:
+Equation: fatigue_level = 7.38 + 0.13 * normalized(training_hours) + 1.07 * normalized(training_intensity) + -0.01 * normalized(training_frequency)
+R-squared: 0.8128
+
+
+Constraints:
+- Training Frequency: 1-7 days per week
+- Training Hours: 1-20 hours per week (1-5 hours per training day)
+- Training Intensity: 1-10 scale
+- Training variables are normalized to ensure fair comparison
